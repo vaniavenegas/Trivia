@@ -1,0 +1,10 @@
+body
+{
+  background-color: rgb(137, 177, 72);
+  color: white
+}
+
+#pregunta2, #pregunta3
+{
+  display: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salud Mental</title>
+  <link href="style-mental.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <h1>SALUD MENTAL</h1>
+
+  <fieldset id="pregunta1">
+    <p>1. ¿Cuántas horas se recomienda dormir diariamente? </p>
+    <input type="radio" id="pregunta1_a" name="pregunta1" value=""/>
+    <label for="pregunta1">12 horas</label><br>
+    <input type="radio" id="pregunta1_b" name="pregunta1" value=""/>
+    <label for="pregunta1"> 3 a 4 horas.</label><br>
+    <input type="radio" id="pregunta1_c" name="pregunta1" value="correcta"/>
+    <label for="pregunta1">7 a 8 horas.</label><br><br>
+    <button type="button" onclick="mostrarPregunta2();">Siguiente</button>
+  </fieldset>
+  
+  <fieldset id="pregunta2">
+    <p>2. Indica la opción que podría ayudarte si te sientes estresado o ansioso</p>
+    <input type="radio" id="pregunta2_a" name="pregunta2" value=""/>
+    <label for="pregunta2"> Beber alcohol o fumar un cigarrillo.</label><br>
+    <input type="radio" id="pregunta2_b" name="pregunta2" value="correcta"/>
+    <label for="pregunta2"> Meditar o hacer ejercicio. </label><br>
+    <input type="radio" id="pregunta2_c" name="pregunta2" value=""/>
+    <label for="pregunta2"> Aislarme en mi habitación. </label><br>
+    <br>
+    <button type="button" onclick="mostrarPregunta3();">Siguiente</button>
+  </fieldset>
+
+  <fieldset id="pregunta3">
+    <p>3. ¿Cuál de estos síntomas puede tener una persona ansiosa?</p>
+    <input type="radio" id="pregunta3_a" name="pregunta3" value="correcta"/>
+    <label for="pregunta3"> Problemas para concentrarse y sobre pensar preocupaciones.</label><br>
+    <input type="radio" id="pregunta3_b" name="pregunta3" value=""/>
+    <label for="pregunta3"> Calma, estabilidad y control de sus emociones.</label><br>
+    <input type="radio" id="pregunta3_c" name="pregunta3" value=""/>
+    <label for="pregunta3"> Facilidad para conciliar el sueño.</label><br>
+    <br>
+     <button type="button" onclick="procesarTrivia();">Enviar Test</button>
+
+  </fieldset>
+<br>
+<p>Te quedan :<span id="tiempo">30</span> segundos</p>
+   <button type="button" id="volverJugar" onclick="window.location.href='salud-mental.html';">Volver a Jugar</button><br>
+        <button type="button" id="irSaludFisica" onclick="window.location.href='salud-fisica.html';">Jugar Salud Física</button>
+<script src="saludMental.js"></script>
+<script src="tiempo.js"</script>
+</body>
+</html>

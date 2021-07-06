@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salud Fisica</title>
+  <link href="style-fisica.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body>
+
+  <h1>SALUD FISICA</h1>
+
+  <fieldset id="pregunta1">
+    <p>1. ¿Cuanto ejercicio semanalmente es recomendado hacer? </p>
+    <input type="radio" id="pregunta1_a" name="pregunta1" value=""/>
+    <label for="pregunta1">Ejercicio intenso, 1 vez por semana</label><br>
+    <input type="radio" id="pregunta1_b" name="pregunta1" value=""/>
+    <label for="pregunta1"> 20 a 40 minutos diarios.</label><br>
+    <input type="radio" id="pregunta1_c" name="pregunta1" value="correcta"/>
+    <label for="pregunta1">3 a 4 hrs diarias.</label><br><br>
+    <button type="button" onclick="mostrarPregunta2();">Siguiente</button>
+  </fieldset>
+  
+  <fieldset id="pregunta2">
+    <p>2. ¿Cuál de estas opciones representan una dieta poco saludable?</p>
+    <input type="radio" id="pregunta2_a" name="pregunta2" value=""/>
+    <label for="pregunta2"> Consumo de frutas, verduras y cereales.</label><br>
+    <input type="radio" id="pregunta2_b" name="pregunta2" value="correcta"/>
+    <label for="pregunta2"> Comida chatarra 3 veces por semana. </label><br>
+    <input type="radio" id="pregunta2_c" name="pregunta2" value=""/>
+    <label for="pregunta2"> Legumbres 2 o 3 veces por semana. </label><br>
+    <br>
+    <button type="button" onclick="mostrarPregunta3();">Siguiente</button>
+  </fieldset>
+
+  <fieldset id="pregunta3">
+    <p>3. ¿Cuál de estas opciones representan un hábito vicioso?</p>
+    <input type="radio" id="pregunta3_a" name="pregunta3" value="correcta"/>
+    <label for="pregunta1"> Pintar o dibujar todos los días.</label><br>
+    <input type="radio" id="pregunta3_b" name="pregunta3" value=""/>
+    <label for="pregunta2"> Ver un capítulo de una serie al día.</label><br>
+    <input type="radio" id="pregunta3_c" name="pregunta3" value=""/>
+    <label for="pregunta3"> Fumar 1 cajetilla de cigarrillos diariamente.</label><br>
+    <br>
+     <button type="button" onclick="procesarTrivia();">Enviar Test</button>
+  </fieldset>
+<br>
+<p>Te quedan :<span id="tiempo">30</span> segundos</p>
+ <button type="button" id="volverJugar" onclick="window.location.href='salud-fisica.html'">Volver a Jugar</button><br>
+ <button type="button" id="irSaludMental" onclick="window.location.href='salud-mental.html';">Jugar Salud Mental</button>
+
+<script src="saludFisica.js"></script>
+<script src="tiempo.js"></script>
+</body>
+</html>
